@@ -15,7 +15,7 @@ Hooks.once('setup', () => {
 });
 
 Hooks.once("ready", () => {
-
+  document.querySelector('html').requestFullscreen();
   Hooks.callAll(`${constants.moduleName}:afterReady`);
 });
 
