@@ -29,6 +29,10 @@
       "path": "lang/pl.json"
     }
   ],
+  "styles": [ 
+    "css/hardcodedfonts.css"
+  ],
+
   "scripts": [
     "./scripts/prompt.js"
   ],

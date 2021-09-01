@@ -1,0 +1,9 @@
+@font-face {
+    font-family: Cambridge;
+    src: url("../fonts/Cambridge.otf") format("opentype");
+}
+
+@font-face {
+    font-family: Esther;
+    src: url("../fonts/Esther-Regular.otf") format("opentype");
+}
