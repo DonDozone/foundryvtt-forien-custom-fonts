@@ -8,7 +8,7 @@ export default function registerSettings() {
     hint: "ForienCustomFonts.Settings.fonts.hint",
     scope: "world",
     config: true,
-    default: 'Grenze Gotisch,Lobster,Indie Flower',
+    default: 'Cambridge,Esther',
     type: String,
     onChange: () => Fonts.render({settings: true})
   });

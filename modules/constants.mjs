@@ -1,6 +1,6 @@
 let constants = {
-  modulePath: "modules/forien-custom-fonts",
-  moduleName: "forien-custom-fonts",
-  moduleLabel: "Forien's Custom Fonts"
+  modulePath: "modules/dondozone-custom-fonts",
+  moduleName: "dondozone-custom-fonts",
+  moduleLabel: "DonDozone's Custom Fonts"
 };
 export default constants;

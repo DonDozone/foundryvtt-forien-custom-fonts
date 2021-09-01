@@ -3,11 +3,7 @@ import constants from "./constants.mjs";
 export default class Fonts {
   static render(options = {settings: false}) {
     let fonts = game.settings.get(constants.moduleName, 'fonts');
-    let fontFamilies = fonts.split(',').map(f => {
-      f.trim();
-
-      return f;
-    }).filter(f => f.length);
+    const fontFamilies = ['Cambridge', 'Esther'];
 
     fontFamilies.forEach(f => {
       if (CONFIG.fontFamilies.includes(f)) return;
@@ -21,11 +17,10 @@ export default class Fonts {
     }).join('&');
 
     $('#fcf').remove();
-    const fontEl = $('<link id="fcf">');
-    fontEl.attr('rel', `stylesheet`);
+    const fontEl = $('<style id="fcf">');
     fontEl.attr('type', `text/css`);
     fontEl.attr('media', `all`);
-    fontEl.attr('href', `https://fonts.googleapis.com/css2?${fonts}&display=swap`);
+    fontEl.text('@font-face {font-family: Cambridge;src: url("path/GraublauWeb.otf") format("opentype");} @font-face {font-family: Esther;src: url("path/Esther-Regular.otf") format("opentype");} ')
     $('head').append(fontEl);
     fontEl.on('load', () => {
       // Try to redraw drawings. If the font isn't loaded. Then wait 5 seconds and try again.
