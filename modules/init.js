@@ -17,6 +17,28 @@ Hooks.once('setup', () => {
 Hooks.once("ready", () => {
   document.querySelector('html').requestFullscreen();
   Hooks.callAll(`${constants.moduleName}:afterReady`);
+
+  
+    Hooks.on("renderTokenHUD", (app, html, data) => {
+      setTimeout(function() {
+        var sortFunction = function(a, b) {
+          var dataA = jQuery(a).data('condition');
+          if (typeof dataA === 'undefined') {
+            dataA = jQuery(a).find('img.pf2e-effect-control')?.data('condition');
+          }
+          var dataB = jQuery(b).data('condition');
+          if (typeof dataB === 'undefined') {
+            dataB = jQuery(b).find('img.pf2e-effect-control')?.data('condition');
+          }
+          if (typeof dataA !== 'undefined' && typeof dataB !== 'undefined') {
+            return (dataA < dataB) ? -1 : 1;
+          } 
+        }
+        var children = jQuery(".status-effects").children().sort(sortFunction);
+        jQuery(".status-effects").empty().append(children);
+        console.log('dözi | Sorting of conditions done')
+      }, 250)  
+    });
 });
 
 Hooks.once("canvasReady", () => {
