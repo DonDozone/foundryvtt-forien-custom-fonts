@@ -2,7 +2,7 @@ import constants from "./constants.mjs";
 
 export default class Fonts {
   static render(options = {settings: false}) {
-    const fontFamilies = ['Cambridge', 'Esther'];
+    const fontFamilies = ['Cambridge', 'Esther', 'Rye'];
 
     fontFamilies.forEach(f => {
       if (CONFIG.fontFamilies.includes(f)) return;

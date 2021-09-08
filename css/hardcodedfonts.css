@@ -7,3 +7,8 @@
     font-family: Esther;
     src: url("../fonts/Esther-Regular.otf") format("opentype");
 }
+
+@font-face {
+    font-family: Rye;
+    src: url("../fonts/rye-regular.ttf") format("truetype");
+}

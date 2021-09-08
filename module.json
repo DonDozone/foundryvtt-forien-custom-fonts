@@ -8,14 +8,14 @@
       "name": "DonDozone"
     }
   ],
-  "version": "0.1.6",
+  "version": "0.1.7",
   "minimumCoreVersion": "0.6.0",
   "compatibleCoreVersion": "0.8.9",
   "url": "https://github.com/DonDozone/foundryvtt-forien-custom-fonts",
   "manifest": "https://raw.githubusercontent.com/DonDozone/foundryvtt-forien-custom-fonts/master/module.json",
-  "download": "https://github.com/DonDozone/foundryvtt-forien-custom-fonts/archive/refs/tags/v0.1.6.zip",
-  "readme": "https://github.com/DonDozone/foundryvtt-forien-custom-fonts/blob/v0.1.6/README.md",
-  "changelog": "https://github.com/DonDozone/foundryvtt-forien-custom-fonts/blob/v0.1.6/changelog.md",
+  "download": "https://github.com/DonDozone/foundryvtt-forien-custom-fonts/archive/refs/tags/v0.1.7.zip",
+  "readme": "https://github.com/DonDozone/foundryvtt-forien-custom-fonts/blob/v0.1.7/README.md",
+  "changelog": "https://github.com/DonDozone/foundryvtt-forien-custom-fonts/blob/v0.1.7/changelog.md",
   "bugs": "https://github.com/DonDozone/foundryvtt-forien-custom-fonts/issues",
   "languages": [
     {
